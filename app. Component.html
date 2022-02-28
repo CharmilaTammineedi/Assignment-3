@@ -1,0 +1,7 @@
+<p>{{ title }}</p>
+<button (click)="onDetailsToggle()">Display details</button>
+<p *ngIf="showDetails">Password is = 'PASSWORD'</p>
+<p *ngFor="let click of clicks"
+   [ngStyle]="{backgroundColor: click >= 5 ? 'blue': 'transparent'}"
+   [ngClass]="{whiteColor: click >= 5}">{{ click }}
+</p>
